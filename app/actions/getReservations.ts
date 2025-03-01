@@ -44,7 +44,7 @@ export default async function getReservations(params: IParams) {
     }));
 
     return safeReservations;
-  } catch (error: any) { // eslint-disable-line @typescript-eslint/no-explicit-any
+  } catch (error: any // eslint-disable-line @typescript-eslint/no-explicit-any) { // eslint-disable-line @typescript-eslint/no-explicit-any
     throw new Error(error);
   }
 }

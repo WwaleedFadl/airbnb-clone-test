@@ -62,7 +62,7 @@ const RentModal = () => {
     });
   }, [location]);
 
-  const setCustomValue = (id: string, value: any) =>
+  const setCustomValue = (id: string, value: any) => // eslint-disable-line @typescript-eslint/no-explicit-any
     setValue(id, value, {
       shouldDirty: true,
       shouldTouch: true,

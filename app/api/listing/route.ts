@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     price,
   } = body;
 
-  Object.keys(body).forEach((value: any) => {
+  Object.keys(body).forEach((value: any) => { // eslint-disable-line @typescript-eslint/no-explicit-any
     if (!body[value]) {
       NextResponse.error();
     }

@@ -8,7 +8,7 @@ import { TbPhotoPlus } from 'react-icons/tb';
 ////////////////////////////////////////
 
 declare global {
-  var cludinary: any;
+  let cludinary: any; // eslint-disable-line @typescript-eslint/no-explicit-any
 }
 
 interface ImageUploadProps {
@@ -23,7 +23,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
   value,
 }) => {
   const handleUpload = useCallback(
-    (result: any) => {
+    (result: any) => { // eslint-disable-line @typescript-eslint/no-explicit-any
       onChange(result.info.secure_url);
     },
     [onChange]
