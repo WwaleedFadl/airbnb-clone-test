@@ -30,7 +30,7 @@ export default async function getListingById(params:IParams){
 
             }
         };
-    } catch (error:any) {
+    } catch (error:any // eslint-disable-line @typescript-eslint/no-explicit-any) {
         throw new Error(error)
     }
 }

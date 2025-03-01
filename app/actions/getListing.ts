@@ -23,7 +23,7 @@ export default async function getListings(params: IListingParams) {
       endDate,
       category,
     } = params;
-    let query: any = {};
+    const query: any = {};// eslint-disable-line @typescript-eslint/no-explicit-any
     if (userId) {
       query.userId = userId;
     }

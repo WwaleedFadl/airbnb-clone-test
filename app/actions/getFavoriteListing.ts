@@ -21,7 +21,7 @@ export default async function getFavoriteListings() {
     }));
 
     return safeFavorites;
-  } catch (error: any) {
+  } catch (error: any // eslint-disable-line @typescript-eslint/no-explicit-any) {
     throw new Error(error);
   }
 }
